@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/uty_logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PENDATAAN MINAT DAN BAKAT"
+            android:textColor="@color/judul"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Nama"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etJurusan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Jurusan"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"/>
+
+        <EditText
+            android:id="@+id/etNPM"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="NPM"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textSize="20sp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgGender">
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laki - Laki"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:textSize="15sp"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minat Bakat"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/cbOlahraga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Olahraga"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/cbBelaDiri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bela Diri"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/cbSeni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seni"
+            android:textSize="15sp"/>
+
+        <CheckBox
+            android:id="@+id/cbRobotika"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Robotika"
+            android:textSize="15sp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:background="@drawable/bg_input"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:background="@drawable/bg_input"/>
+
+    </LinearLayout>
+
+</LinearLayout>
